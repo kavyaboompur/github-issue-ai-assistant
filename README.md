@@ -48,29 +48,19 @@ Others: Requests, Uvicorn
 After extracting the ZIP files, the directory should look like this:
 
 github-issue-ai-assistant/
-
 │
 ├── backend/
-
 │   ├── main.py        # FastAPI entry point
-
 │   ├── llm.py         # AI / LLM logic
-
 │   ├── github.py      # GitHub API integration
-
 │   ├── schemas.py     # Request & response schemas
-
 │   ├── config.py      # Configuration
-
 │   └── __init__.py
 │
-
 ├── frontend/
 │   └── app.py         # Streamlit UI
-
 │
 ├── requirements.txt
-
 └── README.md
 
 
