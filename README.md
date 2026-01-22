@@ -23,9 +23,12 @@ The application performs the following steps:
 7.Allows the user to download the generated JSON output for further use
 
 ## System Requirements
+###You may download the ZIP file from the link and follow the steps below.
 ### incase...i have captured screenshots how to execute step by step here is google drive link = https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
 ### download  zip file and then can proceed or go through below
 - Python  3.11(checkout google drive link for correct version below...Python 3.11.9--strict--.. is crct..beacuse.. it supports all requirements to be installed)
+- - Recommended version: **Python 3.11.9**  
+  - This version is required to ensure compatibility with all project dependencies  
 - Git(download correct version)
 
 ## How to Execute the Project (Step-by-Step)
@@ -71,7 +74,27 @@ Python not recognized: Ensure Python is installed and added to PATH
 Missing modules: Activate the virtual environment and reinstall dependencies
 
 Frontend error: Ensure the backend is running before starting the frontend
+###How to Use the Streamlit Frontend to Get Results
 
+1.Click the Start button when the application loads
+
+2.Copy and paste the GitHub repository URL
+
+3.Enter the issue number
+
+4.Click Analyze Issue
+
+5.Wait until the analysis is completed
+
+6.View the clean and readable analysis summary
+
+7.Click View Result to see the JSON output
+
+8.Optionally preview the GitHub issue
+
+9.Download the JSON output using the Download JSON button
+
+### Example Results and Screenshots
 ### results is being provide in google drive link = https://drive.google.com/file/d/1an2VZ27TGhHyTDghLzRciyoy7-6uZeSl/view?usp=sharing
 output...Screenshot Descriptions
 
@@ -106,14 +129,7 @@ Screenshot (154).png – Final result screen confirming correct application beha
 Screenshot (155).png – Overall demonstration of the working GitHub Issue AI Assistant.
 ### incase...i have captured screenshots how to execute step by step here is google drive link = https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
 
-### how to go through streamlit frontend to get results
-1.click start button once appeared
-2.copy and paste github url and issue number 
-3.click on anaylze issue 
-4.appears analyze complete(clean,readble ,understanding  is being avaible)
-5.click on view results(output in json format is displayed)
-6.if you want preview issue
-7.if u want can download json output by clicking on download button
+
 
 
 
