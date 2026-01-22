@@ -144,6 +144,10 @@ Note: The following command works the same in Windows Command Prompt, PowerShell
 
 python -m uvicorn backend.main:app --port 8000 --reload
 
+The backend API runs locally at http://127.0.0.1:8000 after successful startup.
+(Once running, the backend exposes a local API endpoint at `/analyze` on port 8000.)
+
+
 Keep this terminal window open.
 
 ---
