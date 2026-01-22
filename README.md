@@ -23,13 +23,20 @@ The application performs the following steps:
 7.Allows the user to download the generated JSON output for further use
 
 ## System Requirements
-### You may download the ZIP file from the link and follow the steps below.
-### incase...i have captured screenshots how to execute step by step here is google drive link = https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
-### download  zip file and then can proceed or go through below
-- Python  3.11(checkout google drive link for correct version below...Python 3.11.9--strict--.. is crct..beacuse.. it supports all requirements to be installed)
-- - Recommended version: **Python 3.11.9**  
-  - This version is required to ensure compatibility with all project dependencies  
-- Git(download correct version)
+
+You may download the ZIP file and follow the step-by-step execution screenshots available at the link below, or proceed with the instructions provided in this README:
+
+https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
+
+### Required Software
+
+- **Python 3.11**
+  - Recommended version: **Python 3.11.9**
+  - This version is required to ensure compatibility with all project dependencies
+
+- **Git**
+  - Required to clone the repository
+
 
 ## How to Execute the Project (Step-by-Step)
 
