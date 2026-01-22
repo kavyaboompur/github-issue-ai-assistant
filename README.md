@@ -78,7 +78,7 @@ If the ZIP files are not extracted correctly, commands such as starting the back
 or frontend will fail due to missing paths.
 
 ### Required Software
-
+### If any necessary package are requireded install  
 - **Python 3.11**
   - Recommended version: **Python 3.11.9**
   - This version is required to ensure compatibility with all project dependencies
