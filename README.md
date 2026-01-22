@@ -37,6 +37,9 @@ https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=shari
 - **Git**
   - Required to clone the repository
 
+- **Source Files (ZIP Format)**
+  - Project files are provided in ZIP format.
+  - If any errors related to missing files occur, ensure the ZIP file is completely downloaded and extracted before running the project.
 
 ## How to Execute the Project (Step-by-Step)
 
