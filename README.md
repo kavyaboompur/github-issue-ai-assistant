@@ -28,6 +28,13 @@ The steps and output folders are also included in this repository and can be dow
 You may download the ZIP file and follow the step-by-step execution screenshots available at the link below, or proceed with the instructions provided in this README:
 
 https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
+## Note on Repository Files
+
+For convenience, the backend and frontend source code are provided in ZIP format in this repository.
+You may either extract the ZIP files locally or download the extracted folders directly from GitHub if available.
+
+Before running the project, ensure the `backend/` and `frontend/` folders exist in the project root
+with the structure described in the Project Structure section.
 
 ## Important Note About Project Files (ZIP Format)
 
@@ -51,6 +58,7 @@ After extracting the ZIP files, ensure the project directory is structured as sh
 
 
 github-issue-ai-assistant/
+
 ├── backend/
 
 │ ├── main.py # FastAPI entry point
@@ -89,6 +97,8 @@ Make sure both the `backend` and `frontend` folders are present before running t
 
 If the ZIP files are not extracted correctly, commands such as starting the backend
 or frontend will fail due to missing paths.
+
+
 
 ### Required Software
 ### If any necessary package are requireded install  
