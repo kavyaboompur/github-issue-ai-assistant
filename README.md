@@ -98,6 +98,10 @@ Make sure both the `backend` and `frontend` folders are present before running t
 If the ZIP files are not extracted correctly, commands such as starting the backend
 or frontend will fail due to missing paths.
 
+### IMPORTANT
+Corrected all import paths in main.py so that Python could properly locate backend modules, which fixed repeated ModuleNotFoundError issues.
+
+Aligned the file execution context with the project’s actual folder structure, which allowed the backend server to start successfully without import failures.
 
 ## System Requirements
 ### Required Software
@@ -141,8 +145,17 @@ pip install -r requirements.txt
 ### Step 5: Start the Backend Server
 
 Note: The following command works the same in Windows Command Prompt, PowerShell, and most terminal environments, provided the virtual environment is activated.
+check backend folder
+cd backend
+dir 
+if not found any dir... then give correct path
 
 python -m uvicorn backend.main:app --port 8000 --reload
+
+as you downloaded and extrated zip file it would be like this
+
+python -m uvicorn backend.backend.main:app --reload --port 8000
+
 
 
 Once running, the backend exposes a local API endpoint at `/analyze` on port 8000.
@@ -151,6 +164,37 @@ Once running, the backend exposes a local API endpoint at `/analyze` on port 800
 Keep this terminal window open.
 
 ---
+### PROBLEM FACING?? if facing go through below
+Example Problematic Code:
+
+IN main.py (because your path is different)
+
+from backend.llm import IssueAnalyzer
+
+Solution:
+Updated imports to match the actual folder hierarchy:
+
+from backend.backend.llm import IssueAnalyzer
+
+make sure you add correct path 
+
+Error Example:
+
+ModuleNotFoundError: No module named 'backend'
+
+
+Root Cause:
+Python could not resolve the module path because the application was not executed from the project root.
+
+Solution:
+
+Identified the correct module hierarchy.
+
+Executed the FastAPI server from the project root.
+
+Used the fully qualified module path:
+
+path would appear like this after extracting zip file = python -m uvicorn backend.backend.main:app --reload
 
 ### Step 6: Start the Frontend Application
 
