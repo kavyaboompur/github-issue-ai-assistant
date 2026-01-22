@@ -199,6 +199,8 @@ path would appear like this after extracting zip file = python -m uvicorn backen
 ### Step 6: Start the Frontend Application
 
 ### Open a new terminal window.
+
+ Path would be changed as your extracting zip file follo procedure but change acc. to path in uhr current laptop in which you extracted)
 cd github-issue-ai-assistant 
 
 venv\Scripts\activate
