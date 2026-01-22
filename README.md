@@ -1,263 +1,206 @@
-# GitHub Issue AI Assistant
+## 🐙 GitHub Issue AI Assistant
 
-GitHub Issue AI Assistant is an AI-powered application that analyzes GitHub issues
-and generates structured JSON insights including issue summary, issue type,
-priority score, suggested labels, and potential impact.
+GitHub Issue AI Assistant is an AI-powered application that analyzes GitHub issues and generates structured, actionable insights in JSON format.
+It helps developers and teams quickly understand issue severity, type, priority, and potential impact using AI.
 
-## What This Project Does
+## 🚀 What This Project Does
 
-The application performs the following steps:
+This application performs the following steps:
 
-1.Accepts a GitHub issue URL from the user through a Streamlit web interface
+Accepts a GitHub issue URL and issue number via a Streamlit web interface
 
-2.Fetches the issue title, body, and comments using the GitHub REST API via the requests library
+Fetches issue title, description, and comments using the GitHub REST API
 
-3.Processes the collected issue data using an LLM-based AI model implemented with Hugging Face Transformers
+Processes the issue data using an LLM-based AI model (Hugging Face Transformers)
 
-4.Applies a structured prompt to ensure the AI returns output in a strict JSON schema
+Applies a strict structured prompt to ensure valid JSON output
 
-5.Serves the AI analysis through a FastAPI backend endpoint
+Serves AI analysis through a FastAPI backend
 
-6.Displays the structured results in the Streamlit frontend in a readable format
+Displays results in a clean, readable UI
 
-7.Allows the user to download the generated JSON output for further use
+Allows users to download the generated JSON output
 
-The steps and output folders are also included in this repository and can be downloaded directly, without using the Google Drive links.OR
+## 🧠 Why This Project Matters
 
-You may download the ZIP file and follow the step-by-step execution screenshots available at the link below, or proceed with the instructions provided in this README:
+Saves developer time by summarizing complex GitHub issues
 
-https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
-## Repository Files (Important)
+Converts unstructured issue discussions into structured data
 
-For convenience, the backend and frontend source code are included in this repository in ZIP format.
+Demonstrates real-world LLM integration, API usage, and backend–frontend coordination
 
-You may either:
+Mimics how AI tools are built in modern engineering teams
 
-Extract the ZIP files locally, or
+## 🛠 Tech Stack
 
-Download the extracted folders directly if already available in the repository
+Backend: FastAPI, Python 3.11
 
-Before running the project, ensure that both the backend/ and frontend/ folders exist in the project root.
+Frontend: Streamlit
 
- 
+AI / LLM: Hugging Face Transformers
 
-## Project Structure
+APIs: GitHub REST API
 
-After extracting the ZIP files, ensure the project directory is structured as shown below:
+Others: Requests, Uvicorn
 
+## 📁 Project Structure
+
+After extracting the ZIP files, the directory should look like this:
 
 github-issue-ai-assistant/
-
+│
 ├── backend/
-
-│ ├── main.py # FastAPI entry point
-
-│ ├── llm.py # AI / LLM processing logic
-
-│ ├── github.py # GitHub API integration
-
-│ ├── schemas.py # Request and response schemas
-
-│ ├── config.py # Configuration and constants
-
-│ └── init.py
-
+│   ├── main.py        # FastAPI entry point
+│   ├── llm.py         # AI / LLM logic
+│   ├── github.py      # GitHub API integration
+│   ├── schemas.py     # Request & response schemas
+│   ├── config.py      # Configuration
+│   └── __init__.py
 │
-
 ├── frontend/
-
-│ └── app.py # Streamlit user interface
-
+│   └── app.py         # Streamlit UI
 │
-
-├── requirements.txt # Project dependencies
-
-└── README.md # Project documentation
-
-Note:If the ZIP files are not extracted correctly, commands such as starting the backend
-or frontend will fail due to missing paths.
-
-### IMPORTANT
-Corrected all import paths in main.py so that Python could properly locate backend modules, which fixed repeated ModuleNotFoundError issues.
-
-Aligned the file execution context with the project’s actual folder structure, which allowed the backend server to start successfully without import failures.
-
-## System Requirements
-### Required Software
-### If any necessary package are requireded install  
-- **Python 3.11**
-  - Recommended version: **Python 3.11.9**
-  - This version is required to ensure compatibility with all project dependencies
-
-- **Git**
-  - Required to clone the repository
-
-- **Source Files (ZIP Format)**
-  - Project files are provided in ZIP format.
-  - If any errors related to missing files occur, ensure the ZIP file is completely downloaded and extracted before running the project.
-
-## How to Execute the Project (Step-by-Step)
-
-Follow the steps below exactly in the given order.
-Ensure you are in the correct project directory before running the commands below.  
-All required software and dependencies must be installed before proceeding.
+├── requirements.txt
+└── README.md
 
 
-### Step 1: Clone the Repository
+## Important:
+If ZIP files are not extracted correctly, backend or frontend commands will fail due to missing paths.
 
+## Important Fixes Implemented
+
+Corrected all import paths in main.py to resolve repeated ModuleNotFoundError
+
+Aligned execution commands with the actual extracted folder structure
+
+Ensured backend runs from the project root, not inside subfolders
+
+System Requirements
+Required Software
+
+Python 3.11 (Recommended strictly : 3.11.9)
+
+Git
+
+Extracted project source files (ZIP)
+
+## How to Run the Project (Step-by-Step)
+
+Follow these steps in order.
+
+## Step 1: Clone the Repository
 git clone https://github.com/kavyaboompur/github-issue-ai-assistant.git
+
 cd github-issue-ai-assistant
 
-### Step 2: Create a Virtual Environment
-
+## Step 2: Create a Virtual Environment
 python -m venv venv
 
-### Step 3: Activate the Virtual Environment
+## Step 3: Activate the Virtual Environment
 
 venv\Scripts\activate
 
-Ensure `(venv)` appears in the terminal before continuing.
-### Step 4: Install Dependencies
+Ensure (venv) appears in the terminal.
 
+## Step 4: Install Dependencies
 pip install -r requirements.txt
 
-### Step 5: Start the Backend Server
+Step 5: Start the Backend Server
 
-Note: The following command works the same in Windows Command Prompt, PowerShell, and most terminal environments, provided the virtual environment is activated.
-check backend folder
+Check backend folder path first:
+
 cd backend
-dir 
-if not found any dir... then give correct path
 
-python -m uvicorn backend.main:app --port 8000 --reload
+dir
 
-as you downloaded and extrated zip file it would be like this
+Run the backend based on extracted structure:
+
+python -m uvicorn backend.main:app --reload --port 8000
+
+If ZIP extraction created nested folders, use:
 
 python -m uvicorn backend.backend.main:app --reload --port 8000
 
+Note:if found error the use crct path
 
+Backend API will be available at:
 
-Once running, the backend exposes a local API endpoint at `/analyze` on port 8000.
+http://localhost:8000/analyze
 
+Keep this terminal open.
 
-Keep this terminal window open.
-
----
-### PROBLEM FACING?? if facing go through below
-Example Problematic Code:
-
-IN main.py (because your path is different)
-
-from backend.llm import IssueAnalyzer
-
-Solution:
-Updated imports to match the actual folder hierarchy:(even it goes same for frontend give correct path and then run)
-
-from backend.backend.llm import IssueAnalyzer  OR 
-from llm import IssueAnalyzer
-
-make sure you add correct path 
-
-Error Example:
-
+## Common Backend Error & Fix
+Error:
 ModuleNotFoundError: No module named 'backend'
 
-
 Root Cause:
-Python could not resolve the module path because the application was not executed from the project root.
+Python could not resolve module paths because execution was done from the wrong directory
 
 Solution:
+Identified correct folder hierarchy
 
-Identified the correct module hierarchy.
+Updated imports such as:
+from backend.backend.llm import IssueAnalyzer,
+from backend.llm import IssueAnalyzer
+OR
 
-Executed the FastAPI server from the project root.
+from llm import IssueAnalyzer
 
-Used the fully qualified module path:
+Executed the server from the project root
 
-path would appear like this after extracting zip file = python -m uvicorn backend.backend.main:app --reload
-
-### Step 6: Start the Frontend Application
-
-### Open a new terminal window.
-
- Path would be changed as your extracting zip file follo procedure but change acc. to path in uhr current laptop in which you extracted)
-cd github-issue-ai-assistant 
-
+Step 6: Start the Frontend (New Terminal)
+cd github-issue-ai-assistant
 venv\Scripts\activate
 
-if  found error regarding streamlit not found  install streamlit
+If Streamlit is missing:
 
-streamlit run frontend/app.py(add crct path)
-### Common Errors and Fixes
+pip install streamlit
 
-Python not recognized: Ensure Python is installed and added to PATH
+Run the frontend:
 
-Missing modules: Activate the virtual environment and reinstall dependencies
+streamlit run frontend/app.py
+(Adjust path if folders differ due to ZIP extraction.)
 
-Frontend error: Ensure the backend is running before starting the frontend
-### How to Use the Streamlit Frontend to Get Results
+## How to Use the Application
 
-1.Click the Start button when the application loads
+Click Start
 
-2.Copy and paste the GitHub repository URL
+Enter GitHub repository URL
 
-3.Enter the issue number
+Enter issue number
 
-4.Click Analyze Issue
+Click Analyze Issue
 
-5.Wait until the analysis is completed
+Wait for AI processing
 
-6.View the clean and readable analysis summary
+View readable summary
 
-7.Click View Result to see the JSON output
+Click View Result for JSON
 
-8.Optionally preview the GitHub issue
+Download JSON output if needed
 
-9.Download the JSON output using the Download JSON button
+## Example Results & Screenshots
 
-## Example Results and Screenshots
+Screenshots and example outputs are available here:
+🔗 https://drive.google.com/file/d/1an2VZ27TGhHyTDghLzRciyoy7-6uZeSl/view
 
-The example output results and application screenshots are available at the following
-Google Drive link:https://drive.google.com/file/d/1an2VZ27TGhHyTDghLzRciyoy7-6uZeSl/view?usp=sharing
-### Screenshot Descriptions
+Included Screens:
 
-Screenshot (135).png – Home page of the GitHub Issue AI Assistant application.
+Application home page
 
-Screenshot (136).png – Screen where the user enters the GitHub issue URL and issue number.
+Issue input screen
 
-Screenshot (137).png – Example showing a GitHub issue URL entered for analysis.
+Processing state
 
-Screenshot (138).png – Application processing the issue after clicking the Analyze button.
+AI-generated summary
 
-Screenshot (139).png – Display of the generated issue summary after analysis.
+Priority score & labels
 
-Screenshot (140).png – Output showing the issue type and priority score.
+Full JSON output
 
-Screenshot (141).png – Suggested labels and potential impact generated by the AI.
+Backend & frontend running successfully
 
-Screenshot (142).png – Complete JSON result generated by the system.
+## Step-by-Step Execution Screenshots
 
-Screenshot (143).png – JSON output displayed in a readable format on the UI.
-
-Screenshot (144).png – Option to view or copy the generated JSON output.
-
-Screenshot (151).png – Backend API running successfully and handling requests.
-
-Screenshot (152).png – Streamlit frontend running locally and connected to the backend.
-
-Screenshot (153).png – Full workflow showing successful issue analysis from input to output.
-
-Screenshot (154).png – Final result screen confirming correct application behavior.
-
-Screenshot (155).png – Overall demonstration of the working GitHub Issue AI Assistant.
-### Step-by-Step Execution Screenshots
-
-If you prefer a visual guide, step-by-step execution screenshots are available at the following Google Drive link:
-https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
-
-
-
-
-
-
-
+Visual execution guide available here:
+🔗 https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view
