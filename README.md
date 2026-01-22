@@ -22,35 +22,24 @@ The application performs the following steps:
 
 7.Allows the user to download the generated JSON output for further use
 
-
 The steps and output folders are also included in this repository and can be downloaded directly, without using the Google Drive links.OR
 
 You may download the ZIP file and follow the step-by-step execution screenshots available at the link below, or proceed with the instructions provided in this README:
 
 https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
-## Note on Repository Files
+## Repository Files (Important)
 
-For convenience, the backend and frontend source code are provided in ZIP format in this repository.
-You may either extract the ZIP files locally or download the extracted folders directly from GitHub if available.
+For convenience, the backend and frontend source code are included in this repository in ZIP format.
 
-Before running the project, ensure the `backend/` and `frontend/` folders exist in the project root
-with the structure described in the Project Structure section.
+You may either:
 
-## Important Note About Project Files (ZIP Format)
+Extract the ZIP files locally, or
 
-The backend and frontend source code are provided in ZIP format in this repository.
+Download the extracted folders directly if already available in the repository
 
-Before executing the project, please follow the steps below carefully:
+Before running the project, ensure that both the backend/ and frontend/ folders exist in the project root.
 
-1. Download the repository as a ZIP file **or** clone the repository using Git.
-
-2. Locate the files `backend.zip` and `frontend.zip` in the project root.
-
-3. Extract `backend.zip` to create a folder named `backend`.
-
-4. Extract `frontend.zip` to create a folder named `frontend`.
-
-5. Ensure the final folder structure looks like this:
+ 
 
 ## Project Structure
 
@@ -85,17 +74,7 @@ github-issue-ai-assistant/
 
 └── README.md # Project documentation
 
-
-The `backend` directory contains all server-side logic, including GitHub data fetching, AI processing, and API endpoints.  
-
-The `frontend` directory contains the Streamlit application used for user interaction and result display.
-
-Make sure both the `backend` and `frontend` folders are present before running the execution commands.
-
-
-6. After extraction, proceed with the execution steps described below.
-
-If the ZIP files are not extracted correctly, commands such as starting the backend
+Note:If the ZIP files are not extracted correctly, commands such as starting the backend
 or frontend will fail due to missing paths.
 
 ### IMPORTANT
@@ -174,7 +153,8 @@ from backend.llm import IssueAnalyzer
 Solution:
 Updated imports to match the actual folder hierarchy:(even it goes same for frontend give correct path and then run)
 
-from backend.backend.llm import IssueAnalyzer
+from backend.backend.llm import IssueAnalyzer  OR 
+from llm import IssueAnalyzer
 
 make sure you add correct path 
 
@@ -205,7 +185,9 @@ cd github-issue-ai-assistant
 
 venv\Scripts\activate
 
-streamlit run frontend/app.py
+if  found error regarding streamlit not found  install streamlit
+
+streamlit run frontend/app.py(add crct path)
 ### Common Errors and Fixes
 
 Python not recognized: Ensure Python is installed and added to PATH
