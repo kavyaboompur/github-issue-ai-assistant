@@ -51,11 +51,17 @@ github-issue-ai-assistant/
 
 │
 ├── backend/
+
 │   ├── main.py        # FastAPI entry point
+
 │   ├── llm.py         # AI / LLM logic
+
 │   ├── github.py      # GitHub API integration
+
 │   ├── schemas.py     # Request & response schemas
+
 │   ├── config.py      # Configuration
+
 │   └── __init__.py
 │
 
@@ -64,6 +70,7 @@ github-issue-ai-assistant/
 │
 
 ├── requirements.txt
+
 └── README.md
 
 
