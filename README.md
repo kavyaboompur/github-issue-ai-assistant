@@ -44,8 +44,9 @@ https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=shari
 ## How to Execute the Project (Step-by-Step)
 
 Follow the steps below exactly in the given order.
-### Add correct suitable path
-### All the requiremnts must be downloaded
+Ensure you are in the correct project directory before running the commands below.  
+All required software and dependencies must be installed before proceeding.
+
 
 ### Step 1: Clone the Repository
 
@@ -55,15 +56,19 @@ cd github-issue-ai-assistant
 ### Step 2: Create a Virtual Environment
 
 python -m venv venv
+
 ### Step 3: Activate the Virtual Environment
 
 venv\Scripts\activate
+
 Ensure `(venv)` appears in the terminal before continuing.
 ### Step 4: Install Dependencies
 
 pip install -r requirements.txt
 
 ### Step 5: Start the Backend Server
+
+Note: The following command works the same in Windows Command Prompt, PowerShell, and most terminal environments, provided the virtual environment is activated.
 
 python -m uvicorn backend.main:app --port 8000 --reload
 
@@ -75,7 +80,9 @@ Keep this terminal window open.
 
 ### Open a new terminal window.
 cd github-issue-ai-assistant 
+
 venv\Scripts\activate
+
 streamlit run frontend/app.py
 ### Common Errors and Fixes
 
@@ -104,9 +111,11 @@ Frontend error: Ensure the backend is running before starting the frontend
 
 9.Download the JSON output using the Download JSON button
 
-### Example Results and Screenshots
-### results is being provide in google drive link = https://drive.google.com/file/d/1an2VZ27TGhHyTDghLzRciyoy7-6uZeSl/view?usp=sharing
-output...Screenshot Descriptions
+## Example Results and Screenshots
+
+The example output results and application screenshots are available at the following
+Google Drive link:https://drive.google.com/file/d/1an2VZ27TGhHyTDghLzRciyoy7-6uZeSl/view?usp=sharing
+### Screenshot Descriptions
 
 Screenshot (135).png – Home page of the GitHub Issue AI Assistant application.
 
@@ -137,7 +146,10 @@ Screenshot (153).png – Full workflow showing successful issue analysis from in
 Screenshot (154).png – Final result screen confirming correct application behavior.
 
 Screenshot (155).png – Overall demonstration of the working GitHub Issue AI Assistant.
-### incase...i have captured screenshots how to execute step by step here is google drive link = https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
+### Step-by-Step Execution Screenshots
+
+If you prefer a visual guide, step-by-step execution screenshots are available at the following Google Drive link:
+https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
 
 
 
