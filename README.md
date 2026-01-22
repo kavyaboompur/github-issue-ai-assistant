@@ -131,7 +131,7 @@ If ZIP extraction created nested folders, use:
 
 python -m uvicorn backend.backend.main:app --reload --port 8000
 
-Note:if found error the use crct path
+Note:if found error then use crct path
 
 Backend API will be available at:
 
