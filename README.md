@@ -34,8 +34,8 @@ The application performs the following steps:
 ## How to Execute the Project (Step-by-Step)
 
 Follow the steps below exactly in the given order.
-### add crct suitable path
-### all the requiremnts must be downloaded
+### Add crct suitable path
+### All the requiremnts must be downloaded
 
 ### Step 1: Clone the Repository
 
