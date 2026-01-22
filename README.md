@@ -52,17 +52,29 @@ After extracting the ZIP files, ensure the project directory is structured as sh
 
 github-issue-ai-assistant/
 ├── backend/
+
 │ ├── main.py # FastAPI entry point
+
 │ ├── llm.py # AI / LLM processing logic
+
 │ ├── github.py # GitHub API integration
+
 │ ├── schemas.py # Request and response schemas
+
 │ ├── config.py # Configuration and constants
+
 │ └── init.py
+
 │
+
 ├── frontend/
+
 │ └── app.py # Streamlit user interface
+
 │
+
 ├── requirements.txt # Project dependencies
+
 └── README.md # Project documentation
 
 
