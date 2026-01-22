@@ -172,7 +172,7 @@ IN main.py (because your path is different)
 from backend.llm import IssueAnalyzer
 
 Solution:
-Updated imports to match the actual folder hierarchy:
+Updated imports to match the actual folder hierarchy:(even it goes same for frontend give correct path and then run)
 
 from backend.backend.llm import IssueAnalyzer
 
