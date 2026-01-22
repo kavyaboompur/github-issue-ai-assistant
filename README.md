@@ -23,7 +23,7 @@ The application performs the following steps:
 7.Allows the user to download the generated JSON output for further use
 
 ## System Requirements
-###You may download the ZIP file from the link and follow the steps below.
+### You may download the ZIP file from the link and follow the steps below.
 ### incase...i have captured screenshots how to execute step by step here is google drive link = https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=sharing
 ### download  zip file and then can proceed or go through below
 - Python  3.11(checkout google drive link for correct version below...Python 3.11.9--strict--.. is crct..beacuse.. it supports all requirements to be installed)
@@ -63,18 +63,18 @@ Keep this terminal window open.
 
 ### Step 6: Start the Frontend Application
 
-Open a new terminal window.
+### Open a new terminal window.
 cd github-issue-ai-assistant 
 venv\Scripts\activate
 streamlit run frontend/app.py
-Common Errors and Fixes
+### Common Errors and Fixes
 
 Python not recognized: Ensure Python is installed and added to PATH
 
 Missing modules: Activate the virtual environment and reinstall dependencies
 
 Frontend error: Ensure the backend is running before starting the frontend
-###How to Use the Streamlit Frontend to Get Results
+### How to Use the Streamlit Frontend to Get Results
 
 1.Click the Start button when the application loads
 
