@@ -23,6 +23,7 @@ The application performs the following steps:
 7.Allows the user to download the generated JSON output for further use
 
 ## System Requirements
+The steps and output folders are also included in this repository and can be downloaded directly, without using the Google Drive links.
 
 You may download the ZIP file and follow the step-by-step execution screenshots available at the link below, or proceed with the instructions provided in this README:
 
