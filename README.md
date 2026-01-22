@@ -44,7 +44,7 @@ https://drive.google.com/file/d/1p0RtVNFa7DPiTowxK4ZMbQQsdTN5I5PQ/view?usp=shari
 ## How to Execute the Project (Step-by-Step)
 
 Follow the steps below exactly in the given order.
-### Add crct suitable path
+### Add correct suitable path
 ### All the requiremnts must be downloaded
 
 ### Step 1: Clone the Repository
