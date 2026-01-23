@@ -149,7 +149,7 @@ Python could not resolve module paths because execution was done from the wrong 
 Solution:
 Identified correct folder hierarchy
 
-Updated imports such as:
+Updated imports such as:In main.py of backend folder(beacuse path differs)
 from backend.backend.llm import IssueAnalyzer,
 from backend.llm import IssueAnalyzer
 OR
